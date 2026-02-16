@@ -1,9 +1,21 @@
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import RootLayout from "./components/RootLayout";
+import HomePage from "./components/HomePage";
+
 function App() {
-  return (
-    <div>
-      <input type="text" placeholder="name" />
-    </div>
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<HomePage />} />
+      </Route>,
+    ),
   );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

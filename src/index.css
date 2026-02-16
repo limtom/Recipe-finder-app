@@ -1,2 +1,14 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
+
+@theme {
+  /* Default colors */
+  --color-primary: #ee8c2b;
+  --color-secondary: #1b140d;
+  --color-gray-1: #6b7280;
+  --color-gray-2: #e7dbcf;
+  --color-gray-3: #f8f7f6;
+
+  /* Font family */
+  --font-sans: "Be Vietnam Pro", sans-serif;
+}
