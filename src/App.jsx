@@ -4,14 +4,18 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import RootLayout from "./components/RootLayout";
-import HomePage from "./components/HomePage";
+import RootLayout from "./layouts/RootLayout";
+import HomePage from "./pages/HomePage";
+import SearchResult from "./pages/SearchResult";
+import RecipeDetails from "./pages/RecipeDetails";
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
         <Route index element={<HomePage />} />
+        <Route path="search-results" element={<SearchResult />} />
+        <Route path="recipes/:id" element={<RecipeDetails />} />
       </Route>,
     ),
   );

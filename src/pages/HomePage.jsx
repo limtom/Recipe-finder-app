@@ -1,13 +1,12 @@
 import { Fragment } from "react";
-import Categories from "./Categories";
-import Hero from "./Hero";
-import Trending from "./Trending";
-import Footer from "./Footer";
+import Categories from "../components/Categories";
+import Hero from "../components/Hero";
+import Trending from "../components/Trending";
 
 function HomePage() {
   return (
     <Fragment>
-      <main classNameName="max-w-7xl mx-auto p-7">
+      <main className="max-w-7xl mx-auto p-7">
         {/*Hero */}
         <Hero />
         {/* Categories Section*/}
@@ -15,8 +14,6 @@ function HomePage() {
         {/* Trending Section */}
         <Trending />
       </main>
-      {/*footer */}
-      <Footer />
     </Fragment>
   );
 }

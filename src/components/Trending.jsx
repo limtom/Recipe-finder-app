@@ -2,7 +2,7 @@ function Trending() {
   return (
     <div className="px-4 md:px-20 py-8 max-w-7xl mx-auto w-full mb-12">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-primary dark:text-[#f3ede7]">
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-secondary">
           Trending Now
         </h2>
       </div>
@@ -22,25 +22,25 @@ function Trending() {
                 Avocado Toast Supreme
               </h3>
               <div className="flex items-center gap-1 text-primary text-sm font-bold">
-                <span className="material-symbols-outlined text-[16px] fill-current">
+                <span className="material-symbols-outlined text-base fill-current">
                   star
                 </span>
                 4.9
               </div>
             </div>
-            <p className="text-sm text-gray-500 dark:text-gray-400 line-clamp-2">
+            <p className="text-sm text-gray-500 line-clamp-2">
               Crispy sourdough topped with smashed avocado, poached egg, and
               chili flakes.
             </p>
-            <div className="flex items-center gap-4 mt-2 text-xs font-medium text-gray-500 dark:text-gray-400">
+            <div className="flex items-center gap-4 mt-2 text-xs font-medium text-gray-500 ">
               <div className="flex items-center gap-1">
-                <span className="material-symbols-outlined text-[16px]">
+                <span className="material-symbols-outlined text-base">
                   schedule
                 </span>
                 15 min
               </div>
               <div className="flex items-center gap-1">
-                <span className="material-symbols-outlined text-[16px]">
+                <span className="material-symbols-outlined text-base">
                   local_fire_department
                 </span>
                 320 kcal
@@ -63,25 +63,25 @@ function Trending() {
                 Creamy Tomato Basil Pasta
               </h3>
               <div className="flex items-center gap-1 text-primary text-sm font-bold">
-                <span className="material-symbols-outlined text-[16px] fill-current">
+                <span className="material-symbols-outlined text-base fill-current">
                   star
                 </span>
                 4.7
               </div>
             </div>
-            <p className="text-sm text-gray-500 dark:text-gray-400 line-clamp-2">
+            <p className="text-sm text-gray-500 line-clamp-2">
               A simple yet delicious pasta dish made with fresh tomatoes, basil,
               and a hint of cream.
             </p>
-            <div className="flex items-center gap-4 mt-2 text-xs font-medium text-gray-500 dark:text-gray-400">
+            <div className="flex items-center gap-4 mt-2 text-xs font-medium text-gray-500">
               <div className="flex items-center gap-1">
-                <span className="material-symbols-outlined text-[16px]">
+                <span className="material-symbols-outlined text-base">
                   schedule
                 </span>
                 25 min
               </div>
               <div className="flex items-center gap-1">
-                <span className="material-symbols-outlined text-[16px]">
+                <span className="material-symbols-outlined text-base">
                   local_fire_department
                 </span>
                 450 kcal
@@ -104,25 +104,25 @@ function Trending() {
                 Grilled Salmon &amp; Asparagus
               </h3>
               <div className="flex items-center gap-1 text-primary text-sm font-bold">
-                <span className="material-symbols-outlined text-[16px] fill-current">
+                <span className="material-symbols-outlined text-base fill-current">
                   star
                 </span>
                 4.8
               </div>
             </div>
-            <p className="text-sm text-gray-500 dark:text-gray-400 line-clamp-2">
+            <p className="text-sm text-gray-500 line-clamp-2">
               Healthy and flavorful grilled salmon served with roasted asparagus
               spears.
             </p>
             <div className="flex items-center gap-4 mt-2 text-xs font-medium text-gray-500 dark:text-gray-400">
               <div className="flex items-center gap-1">
-                <span className="material-symbols-outlined text-[16px]">
+                <span className="material-symbols-outlined text-base">
                   schedule
                 </span>
                 30 min
               </div>
               <div className="flex items-center gap-1">
-                <span className="material-symbols-outlined text-[16px]">
+                <span className="material-symbols-outlined text-base">
                   local_fire_department
                 </span>
                 380 kcal
