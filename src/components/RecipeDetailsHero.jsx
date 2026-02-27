@@ -5,7 +5,7 @@ function RecipeDetailsHero() {
       alt="Close up of spicy basil chicken stir fry in a dark ceramic bowl"
       style={{
         backgroundImage:
-          'linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%), url("/public/images/hero2.png")',
+          'linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%), url("/images/hero2.png")',
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

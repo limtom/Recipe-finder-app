@@ -84,7 +84,7 @@ function Prep() {
               className="mt-4 rounded-xl overflow-hidden h-64 w-full bg-cover bg-center"
               alt="Final dish plated with rice and topped with a fried egg"
               style={{
-                backgroundImage: 'url("/public/images/d1.png")',
+                backgroundImage: 'url("/images/d1.png")',
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}

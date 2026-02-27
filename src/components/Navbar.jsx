@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="max-w-full flex items-center h-18.75 bg-gray-3 border-b border-gray-2 ">
+    <nav className="max-w-full flex items-center h-18.75 bg-gray-3 border-b border-gray-2 fixed top-0 left-0 right-0 z-9999">
       <div className="w-full md:max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <span className="material-symbols-outlined text-primary">
