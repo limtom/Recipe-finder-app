@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import ResultCard from "../components/ResultCard";
+import RecipeCard from "../components/RecipeCard";
 import Search from "../components/Search";
 import { useState, useEffect, Fragment } from "react";
 
@@ -92,7 +92,7 @@ function SearchResult() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
           {allMeals.length > 0 ? (
             displayedMeals.map((meal) => (
-              <ResultCard mealObj={meal} key={meal.idMeal} />
+              <RecipeCard mealObj={meal} key={meal.idMeal} />
             ))
           ) : (
             <div className="text-center text-gray-500 mt-10 col-span-full">

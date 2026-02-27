@@ -14,10 +14,15 @@ function Navbar() {
         </div>
 
         <ul className="hidden sm:flex sm:items-center sm:gap-8 cursor-pointer ">
-          <NavLink to="/">
-            <li className="text-sm text-secondary font-bold font-sans hover:text-primary transition-all duration-200">
-              Home
-            </li>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `text-sm font-bold font-sans hover:text-primary transition-all duration-200 ${
+                isActive ? "text-primary" : "text-secondary"
+              }`
+            }
+          >
+            <li>Home</li>
           </NavLink>
           <NavLink>
             <li className="text-sm text-secondary font-medium font-sans hover:text-primary transition-all duration-200">

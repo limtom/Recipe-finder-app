@@ -1,4 +1,4 @@
-function ResultCard({ mealObj }) {
+function RecipeCard({ mealObj }) {
   return (
     <div className="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 dark:border-slate-700 ">
       <div className="relative aspect-4/3 overflow-hidden">
@@ -36,4 +36,4 @@ function ResultCard({ mealObj }) {
   );
 }
 
-export default ResultCard;
+export default RecipeCard;
