@@ -51,8 +51,11 @@ function Search({ initialQuery = "" }) {
     }
   }
 
-  func;
-  console.log(data);
+  function handleKeyPress(e) {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  }
 
   return (
     <Fragment>
@@ -67,6 +70,7 @@ function Search({ initialQuery = "" }) {
           placeholder="Enter ingredients (e.g., chicken, basil) or dish names..."
           value={query}
           onChange={(e) => setquery(e.target.value)}
+          onKeyDown={handleKeyPress}
         />
         <button
           className="bg-primary text-white py-3 px-6 rounded-2xl text-lg cursor-pointer font-bold font-sans"
