@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Fragment, useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-function Search() {
+function Search({ initialQuery = "" }) {
   const [query, setquery] = useState("");
   const [activeQuery, setActiveQuery] = useState("");
   const location = useLocation();
@@ -38,12 +38,20 @@ function Search() {
     }
   }, [isSuccess, data, activeQuery, navigate]);
 
+  // Auto-search if initialSearchTerm is provided
+  useEffect(() => {
+    if (initialQuery && !activeQuery) {
+      setActiveQuery(initialQuery);
+    }
+  }, [initialQuery, activeQuery]);
+
   function handleSearch() {
     if (query.trim()) {
       setActiveQuery(query);
     }
   }
 
+  func;
   console.log(data);
 
   return (
