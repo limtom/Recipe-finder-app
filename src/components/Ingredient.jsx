@@ -1,7 +1,7 @@
 import IngredientItem from "./IngredientItem";
 import Nutrition from "./Nutrition";
 
-function Ingredient() {
+function Ingredient({ ingrObj }) {
   return (
     <aside className="lg:col-span-4 flex flex-col gap-8">
       {/* Ingredients Card */}
@@ -16,17 +16,12 @@ function Ingredient() {
         </div>
         <ul className="flex flex-col gap-4">
           {/* Ingredient Item */}
-          <IngredientItem />
-          <IngredientItem />
-          <IngredientItem />
-          <IngredientItem />
-          <IngredientItem />
-          <IngredientItem />
-          <IngredientItem />
-          <IngredientItem />
+          {ingrObj?.map((ingr, i) => (
+            <IngredientItem ingrItem={ingr} key={i} />
+          ))}
         </ul>
       </div>
-      <Nutrition />
+      {/*<Nutrition />*/}
     </aside>
   );
 }

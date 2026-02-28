@@ -1,11 +1,10 @@
-function RecipeDetailsHero() {
+function RecipeDetailsHero({ mealObj }) {
   return (
     <section
       className="relative rounded-2xl overflow-hidden min-h-120 bg-cover bg-center group"
       alt="Close up of spicy basil chicken stir fry in a dark ceramic bowl"
       style={{
-        backgroundImage:
-          'linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%), url("/images/hero2.png")',
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%), url(${mealObj?.strMealThumb})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -14,17 +13,14 @@ function RecipeDetailsHero() {
         {/* Chips inside Hero */}
         <div className="flex gap-2 flex-wrap mb-2">
           <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white text-xs font-bold border border-white/10">
-            Gluten-Free
+            {mealObj?.strArea}
           </span>
           <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white text-xs font-bold border border-white/10">
-            High Protein
-          </span>
-          <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white text-xs font-bold border border-white/10">
-            Spicy
+            {mealObj?.strCategory}
           </span>
         </div>
         <h1 className="text-white text-4xl md:text-6xl font-black leading-tight tracking-tight drop-shadow-sm">
-          Spicy Basil Chicken
+          {mealObj?.strMeal}
         </h1>
         <p className="text-white/90 text-lg max-w-2xl font-medium drop-shadow-sm leading-relaxed">
           A quick and aromatic stir-fry dish perfect for weeknights. Fresh basil

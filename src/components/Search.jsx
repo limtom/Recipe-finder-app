@@ -79,35 +79,6 @@ function Search({ initialQuery = "" }) {
           search
         </button>
       </div>
-      {/*filter buttons */}
-      <div className="flex flex-wrap mt-6 items-center justify-center gap-4">
-        <button
-          className={`flex items-center gap-2 px-4 py-2 rounded-full ${location === "/" ? "bg-white/20 text-white hover:bg-white/30" : "bg-gray-4 text-gray-5"} backdrop-blur-md  transition-colors border border-white/10  text-sm font-medium cursor-pointer`}
-        >
-          <span className="material-symbols-outlined text-lg">
-            temp_preferences_custom
-          </span>
-          By Ingredients
-        </button>
-        <button
-          className={`flex items-center gap-2 px-4 py-2 rounded-full ${location === "/" ? "bg-white/20 text-white hover:bg-white/30" : "bg-gray-4 text-gray-5"} backdrop-blur-md  transition-colors border border-white/10  text-sm font-medium cursor-pointer`}
-        >
-          <span className="material-symbols-outlined text-lg">restaurant</span>
-          By Dish Name
-        </button>
-        <button
-          className={`flex items-center gap-2 px-4 py-2 rounded-full ${location === "/" ? "bg-white/20 text-white hover:bg-white/30" : "bg-gray-4 text-gray-5"} backdrop-blur-md  transition-colors border border-white/10  text-sm font-medium cursor-pointer`}
-        >
-          <span className="material-symbols-outlined text-lg">eco</span>
-          Vegetarian
-        </button>
-        <button
-          className={`flex items-center gap-2 px-4 py-2 rounded-full ${location === "/" ? "bg-white/20 text-white hover:bg-white/30" : "bg-gray-4 text-gray-5"} backdrop-blur-md  transition-colors border border-white/10  text-sm font-medium cursor-pointer`}
-        >
-          <span className="material-symbols-outlined text-lg">timer</span>
-          Under 30 Mins
-        </button>
-      </div>
     </Fragment>
   );
 }
