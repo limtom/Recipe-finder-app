@@ -25,9 +25,13 @@ function AllCategories() {
       </div>
       {/* Categories Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
-        {categories.map((cate, i) => (
-          <CategoryCard categoryObj={cate} key={i} />
-        ))}
+        {isPending ? (
+          <p>Loading...</p>
+        ) : (
+          categories.map((cate, i) => (
+            <CategoryCard categoryObj={cate} key={i} />
+          ))
+        )}
       </div>
     </main>
   );

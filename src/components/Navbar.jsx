@@ -34,8 +34,8 @@ function Navbar() {
           </NavLink>
         </ul>
 
-        <button className="bg-primary text-white py-3 px-6 rounded-full text-sm cursor-pointer font-bold font-sans hover:bg-secondary">
-          Login
+        <button className="border border-primary text-primary py-3 px-6 rounded-full text-sm cursor-pointer font-bold font-sans hover:bg-primary hover:text-white hover:border-white">
+          About
         </button>
       </div>
     </nav>

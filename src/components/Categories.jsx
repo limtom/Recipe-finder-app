@@ -35,9 +35,13 @@ function Categories() {
         </Link>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-        {filteredCategories?.map((cate) => (
-          <CategoryCard categoryObj={cate} key={cate?.strCategory} />
-        ))}
+        {isPending ? (
+          <p>Loading...</p>
+        ) : (
+          filteredCategories?.map((cate) => (
+            <CategoryCard categoryObj={cate} key={cate?.strCategory} />
+          ))
+        )}
       </div>
     </div>
   );
