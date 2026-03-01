@@ -12,3 +12,8 @@
   --color-gray-5:
     #475569 /* Font family */ --font-sans: "Be Vietnam Pro", sans-serif;
 }
+
+a.active {
+  color: var(--color-primary);
+  font-weight: bold;
+}

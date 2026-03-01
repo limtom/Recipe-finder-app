@@ -16,23 +16,21 @@ function Navbar() {
         <ul className="hidden sm:flex sm:items-center sm:gap-8 cursor-pointer ">
           <NavLink
             to="/"
-            className={({ isActive }) =>
-              `text-sm font-bold font-sans hover:text-primary transition-all duration-200 ${
-                isActive ? "text-primary" : "text-secondary"
-              }`
-            }
+            className="text-sm text-secondary font-medium font-sans hover:text-primary transition-all duration-200"
           >
             <li>Home</li>
           </NavLink>
-          <NavLink>
-            <li className="text-sm text-secondary font-medium font-sans hover:text-primary transition-all duration-200">
-              Saved Recipes
-            </li>
+          <NavLink
+            to="recipes/all-categories"
+            className="text-sm text-secondary font-medium font-sans hover:text-primary transition-all duration-200"
+          >
+            <li className="">Categories</li>
           </NavLink>
-          <NavLink>
-            <li className="text-sm text-secondary font-medium font-sans hover:text-primary transition-all duration-200">
-              About
-            </li>
+          <NavLink
+            to="/recipes/favorites"
+            className="text-sm text-secondary font-medium font-sans hover:text-primary transition-all duration-200"
+          >
+            <li>Saved</li>
           </NavLink>
         </ul>
 
