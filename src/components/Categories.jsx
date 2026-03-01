@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import CategoryCard from "./CategoryCard";
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Categories() {
   const { data, isPending } = useQuery({
@@ -28,13 +28,15 @@ function Categories() {
         <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-secondary">
           Popular Categories
         </h2>
-        <a className="text-primary font-bold text-sm hover:underline" href="#">
-          View all
-        </a>
+        <Link to="recipes/all-categories">
+          <p className="text-primary font-bold text-sm hover:underline">
+            View all
+          </p>
+        </Link>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-        {filteredCategories.map((cate) => (
-          <CategoryCard categoryObj={cate} key={cate.strCategory} />
+        {filteredCategories?.map((cate) => (
+          <CategoryCard categoryObj={cate} key={cate?.strCategory} />
         ))}
       </div>
     </div>
