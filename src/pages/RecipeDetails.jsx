@@ -1,7 +1,6 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Ingredient from "../components/Ingredient";
 import Prep from "../components/Prep";
-import Ratings from "../components/Ratings";
 import RecipeDetailsHero from "../components/RecipeDetailsHero";
 import { useQuery } from "@tanstack/react-query";
 import {
@@ -85,7 +84,12 @@ function RecipeDetails() {
             <div className="lg:col-span-8 flex flex-col gap-10">
               <Prep prep={result?.instructions} />
               <hr className="border-black/5 dark:border-white/10 my-4" />
-              {/*<Ratings />*/}
+              {/*Back link*/}
+              <Link to="/search-results">
+                <p className="text-primary font-light text-xl hover:underline tracking-wide">
+                  &larr; Back
+                </p>
+              </Link>
             </div>
           </div>
         </div>

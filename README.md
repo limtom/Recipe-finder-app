@@ -2,7 +2,7 @@
 
 A modern web application that helps users discover delicious recipes based on ingredients they already have in their kitchen. Built with React, React Router, and TanStack Query.
 
-![RecipeFinder Homepage](screencapture-localhost-5173-2026-02-28-23_08_42.png)
+![RecipeFinder Homepage](public/images/Homepage.png)
 
 ## Overview
 
@@ -14,7 +14,7 @@ RecipeFinder is your go-to kitchen companion that transforms the question "What 
 
 Search for recipes by entering ingredients you have in your kitchen or specific dish names. The app intelligently matches your input with recipes from TheMealDB API.
 
-![Search Results Page](screencapture-localhost-5173-search-results-2026-02-28-23_09_15.png)
+![Search Results Page](public/images/SearchResult.png)
 
 ### 2. Comprehensive Recipe Details
 
@@ -26,7 +26,7 @@ Each recipe page provides:
 - **Nutritional Information**: Quick glance at cooking time and calories
 - **User Ratings**: Community feedback and reviews section
 
-![Recipe Details Page](screencapture-localhost-5173-recipes-53358-2026-02-28-23_09_28.png)
+![Recipe Details Page](public/images/RecipeDetails.png)
 
 ### 3. Recipe Organization
 

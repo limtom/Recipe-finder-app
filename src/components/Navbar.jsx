@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -8,9 +8,11 @@ function Navbar() {
           <span className="material-symbols-outlined text-primary">
             local_dining
           </span>
-          <span className="text-secondary capitalize font-bold text-xl font-sans">
-            recipefinder
-          </span>
+          <Link to="/">
+            <span className="text-secondary capitalize font-bold text-xl font-sans">
+              recipefinder
+            </span>
+          </Link>
         </div>
 
         <ul className="hidden sm:flex sm:items-center sm:gap-8 cursor-pointer ">
